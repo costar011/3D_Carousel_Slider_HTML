@@ -74,3 +74,30 @@
   font-size: 25px;
   margin-bottom: 6px;
 }
+
+.navigation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.navigation span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+
+  height: 80px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  font-size: 55px;
+
+  color: #fff;
+  cursor: pointer;
+}
