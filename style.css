@@ -30,6 +30,7 @@
   height: inherit;
   display: flex;
   align-items: center;
+  transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .img-slider .img-item {
