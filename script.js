@@ -24,4 +24,13 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   indexSlider--;
   imgSlider.style.transform = `rotate(${indexSlider * -90}deg)`;
+
+  index--;
+
+  if (index < 0) {
+    index = imgFruits.length - 1;
+  }
+
+  document.querySelector(".fruit.active").classList.remove("active");
+  imgFruits[index].classList.add("active");
 });

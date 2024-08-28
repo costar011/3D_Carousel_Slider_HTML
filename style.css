@@ -30,7 +30,7 @@
   height: inherit;
   display: flex;
   align-items: center;
-  transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .img-slider .img-item {
@@ -47,6 +47,10 @@
 
 .img-item.fruit img {
   transform: rotate(-90deg) translateY(-30%);
+  scale: 0;
+}
+
+.img-item.fruit.active img {
   scale: 0;
 }
 
@@ -69,7 +73,6 @@
   color: #fff;
   height: 150px;
 }
-
 
 .info-item h2 {
   font-size: 25px;
@@ -95,7 +98,7 @@
   width: 80px;
 
   height: 80px;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   font-size: 55px;
 
