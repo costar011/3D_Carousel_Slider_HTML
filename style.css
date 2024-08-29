@@ -48,10 +48,12 @@
 .img-item.fruit img {
   transform: rotate(-90deg) translateY(-30%);
   scale: 0;
+  transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .img-item.fruit.active img {
-  scale: 0;
+  scale: 1;
+  transition-delay: .1s;
 }
 
 .info-box {
