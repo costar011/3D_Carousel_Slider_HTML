@@ -1,5 +1,6 @@
 const imgSlider = document.querySelector(".img-slider");
 const imgFruits = document.querySelectorAll(".img-item.fruit");
+const infoSlider = document.querySelector(".");
 
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");

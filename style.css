@@ -68,6 +68,11 @@
   flex-direction: column;
 }
 
+.info-box .info-slider {
+  border: 2px solid green;
+}
+
+
 .info-slider .info-item {
   display: flex;
   flex-direction: column;
