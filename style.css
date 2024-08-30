@@ -62,10 +62,12 @@
   bottom: 5%;
   width: 350px;
   height: 150px;
-  border: 2px solid #000;
+  border: 2px solid red;
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .info-box .info-slider {

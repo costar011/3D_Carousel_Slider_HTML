@@ -1,5 +1,6 @@
 const imgSlider = document.querySelector(".img-slider");
 const imgFruits = document.querySelectorAll(".img-item.fruit");
+const infoBox = document.querySelector(".info-box");
 const infoSlider = document.querySelector(".info-slider");
 
 const nextBtn = document.querySelector(".next-btn");
@@ -22,9 +23,15 @@ nextBtn.addEventListener("click", () => {
   document.querySelector(".fruit.active").classList.remove("active");
   imgFruits[index].classList.add("active");
 
-  direction = -1;
-  console.log(direction);
 
+  if (direction === 1) { 
+    infoSlider.prepend(infoSlider.lastElementChild);
+  }
+
+  direction = -1;
+
+
+  infoBox.style.justifyContent = `flex-start`;
   infoSlider.style.transform = `translateY(-25%)`;
 });
 
@@ -41,9 +48,13 @@ prevBtn.addEventListener("click", () => {
   document.querySelector(".fruit.active").classList.remove("active");
   imgFruits[index].classList.add("active");
 
-  direction = 1;
-  console.log(direction);
+  if (direction === -1) {
+    infoSlider.append(infoSlider.firstElementChild);
+  } 
 
+  direction = 1;
+ 
+  infoBox.style.justifyContent = `flex-end`;
   infoSlider.style.transform = `translateY(25%)`;
 });
 
