@@ -9,7 +9,6 @@
 
 .carousel {
   height: 100vh;
-  background: #55a0f0;
 }
 
 .img-box {
@@ -62,7 +61,6 @@
   bottom: 5%;
   width: 350px;
   height: 150px;
-  border: 2px solid red;
 
   display: flex;
   flex-direction: column;
@@ -71,7 +69,6 @@
 }
 
 .info-box .info-slider {
-  border: 2px solid green;
   transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -113,4 +110,68 @@
 
   color: #fff;
   cursor: pointer;
+}
+
+.large-text {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.large-text h2 {
+  font-size: 16px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -90px;
+  user-select: none;
+  color: rgba(255, 255, 255, .4);
+}
+
+.bg-box .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.bg-box .bg.active {
+  opacity: 1;
+}
+
+.bg-box .bg::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 800px;
+  height: 800px;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
+.bg-box .bg:nth-child(1) {
+  background: #55a0f0;
+}
+
+.bg-box .bg:nth-child(2) {
+  background: #df9e7d;
+}
+
+.bg-box .bg:nth-child(3) {
+  background: #6cc680;
+}
+
+.bg-box .bg:nth-child(4) {
+  background: #e9a5b2;
 }
