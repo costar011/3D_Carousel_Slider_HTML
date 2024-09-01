@@ -52,7 +52,7 @@
 
 .img-item.fruit.active img {
   scale: 1;
-  transition-delay: 0.1s;
+  transition-delay: .1s;
 }
 
 .info-box {

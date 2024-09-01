@@ -2,6 +2,7 @@ const imgSlider = document.querySelector(".img-slider");
 const imgFruits = document.querySelectorAll(".img-item.fruit");
 const infoBox = document.querySelector(".info-box");
 const infoSlider = document.querySelector(".info-slider");
+const bgs = document.querySelectorAll(".bg");
 
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
@@ -22,6 +23,9 @@ nextBtn.addEventListener("click", () => {
 
   document.querySelector(".fruit.active").classList.remove("active");
   imgFruits[index].classList.add("active");
+
+  document.querySelector(".bg.active").classList.remove("active");
+  bgs[index].classList.add("active");
 
 
   if (direction === 1) { 
@@ -47,6 +51,9 @@ prevBtn.addEventListener("click", () => {
 
   document.querySelector(".fruit.active").classList.remove("active");
   imgFruits[index].classList.add("active");
+
+  document.querySelector(".bg.active").classList.remove("active");
+  bgs[index].classList.add("active");
 
   if (direction === -1) {
     infoSlider.append(infoSlider.firstElementChild);
