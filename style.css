@@ -52,7 +52,7 @@
 
 .img-item.fruit.active img {
   scale: 1;
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 
 .info-box {
@@ -69,7 +69,7 @@
 }
 
 .info-box .info-slider {
-  transition: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .info-slider .info-item {
@@ -125,12 +125,12 @@
 }
 
 .large-text h2 {
-  font-size: 16px;
-  writing-mode: vertical-lr;
+  font-size: 160px;
+  writing-mode: vertical-rl;
   text-orientation: upright;
   letter-spacing: -90px;
+
   user-select: none;
-  color: rgba(255, 255, 255, .4);
 }
 
 .bg-box .bg {
@@ -147,15 +147,15 @@
 }
 
 .bg-box .bg::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
+
   width: 800px;
   height: 800px;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   filter: blur(200px);
 }
