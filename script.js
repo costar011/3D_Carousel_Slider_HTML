@@ -28,7 +28,7 @@ nextBtn.addEventListener("click", () => {
   bgs[index].classList.add("active");
 
 
-  if (direction === 1) { 
+  if (direction == 1) { 
     infoSlider.prepend(infoSlider.lastElementChild);
   }
 
@@ -55,7 +55,7 @@ prevBtn.addEventListener("click", () => {
   document.querySelector(".bg.active").classList.remove("active");
   bgs[index].classList.add("active");
 
-  if (direction === -1) {
+  if (direction == -1) {
     infoSlider.append(infoSlider.firstElementChild);
   } 
 
@@ -66,7 +66,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 infoSlider.addEventListener("transitionend", () => {
-  if (direction === -1) {
+  if (direction == -1) {
     infoSlider.append(infoSlider.firstElementChild);
   } else if (direction === 1) {
     infoSlider.prepend(infoSlider.lastElementChild);
