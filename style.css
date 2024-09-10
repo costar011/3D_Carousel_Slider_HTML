@@ -131,6 +131,7 @@
   letter-spacing: -90px;
 
   user-select: none;
+  color: rgba(255, 255, 255, .4);
 }
 
 .bg-box .bg {
